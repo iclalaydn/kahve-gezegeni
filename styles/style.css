@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FDFBF7; 
+    color: #4A3B32;            
+}
+
+.navbar {
+    background-color: #F5EBE6; 
+    border-bottom: 1px solid #E6D7CE; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6F4E37;            
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;             
+    gap: 25px;                
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8B7365;            
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6F4E37;           
+}
+
+.nav-links a.active {
+    color: #6F4E37;
+    border-bottom: 2px solid #6F4E37;
+    padding-bottom: 5px;
+}
+
+/* ==========================================================================
+   GİRİŞ (HERO) KAPAK ALANI
+   ========================================================================== */
+.hero-section {
+    background-image: linear-gradient(rgba(74, 59, 50, 0.55), rgba(74, 59, 50, 0.55)), url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    color: #FDFBF7; 
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    color: #F5EBE6;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #6F4E37; 
+    color: #FDFBF7;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #F5EBE6;
+    color: #6F4E37;
+    transform: translateY(-3px); 
+}
+
+.quiz-section {
+    padding: 60px 20px;
+    background-color: #FDFBF7; 
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #F5EBE6; 
+    padding: 40px;
+    border-radius: 20px;     
+    box-shadow: 0 5px 15px rgba(111, 78, 55, 0.05); 
+    text-align: center;
+}
+
+.quiz-container h2 {
+    color: #6F4E37;            
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.quiz-subtitle {
+    color: #8B7365;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4A3B32;
+    margin-bottom: 25px;
+}
+
+.quiz-options {
+    display: flex;           
+    flex-direction: column;    
+    gap: 12px;
+}
+
+.quiz-btn {
+    background-color: #FDFBF7; 
+    color: #4A3B32;
+    border: 1px solid #E6D7CE;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;        
+}
+
+.quiz-btn:hover {
+    background-color: #6F4E37; 
+    color: #FDFBF7;
+    border-color: #6F4E37;
+    transform: translateX(5px);
+}
+
+#result-box {
+    padding: 10px;
+}
+
+#result-title {
+    font-size: 22px;
+    color: #6F4E37;
+    margin-bottom: 15px;
+}
+
+#result-desc {
+    font-size: 16px;
+    color: #4A3B32;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.restart-btn {
+    background-color: #8B7365;
+    color: #FDFBF7;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.restart-btn:hover {
+    background-color: #6F4E37;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.footer {
+    background-color: #F5EBE6; 
+    color: #8B7365;            
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #E6D7CE;
+    font-size: 14px;
+    margin-top: 40px;          
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-credit {
+    font-style: italic;
+    font-size: 13px;
+    color: #6F4E37;           
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #4a3b32;
+    font-size: 28px;
+}
+
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 30px;            
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e2d7cd;
+    border-radius: 8px;
+    width: 280px;        
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-image-box {
+    width: 100%;
+    height: 250px;        
+    overflow: hidden;    
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #fcfbfa;
+}
+
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #4a3b32;
+    margin-bottom: 10px;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: #7a6b61;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8c6239;
+    margin-bottom: 15px;
+}
+
+.view-detail-btn {
+    display: block;
+    background-color: #8c6239;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.view-detail-btn:hover {
+    background-color: #6f4e2d;
+}
+
+.detail-section {
+    padding: 60px 20px;
+    background-color: #fcfbfa;
+}
+
+/* Sol ve sağ tarafı yan yana dizen ana Flexbox kutusu */
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;         /* Ekran küçülünce alt alta geçsinler */
+    gap: 50px;               /* Resim ve yazı kutusu arasındaki boşluk */
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    align-items: center;     /* Dikeyde ortala */
+}
+
+/* Sol Taraf: Resim Kutusu */
+.detail-image-box {
+    flex: 1;                 /* Eşit alan kaplasınlar */
+    min-width: 300px;        /* Küçük ekranlarda minimum genişlik */
+    max-width: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Detay sayfasındaki büyük kupa resmi */
+.detail-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sağ Taraf: İçerik Kutusu */
+.detail-content-box {
+    flex: 12;                /* İçeriğe biraz daha geniş alan verdik */
+    min-width: 300px;
+}
+
+/* Kategori Etiketi (Özel Tasarım Ekipmanlar yazısı) */
+.category-badge {
+    display: inline-block;
+    background-color: #f5ebe0;
+    color: #8c6239;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Ürün Başlığı */
+.detail-title {
+    font-size: 32px;
+    color: #4a3b32;
+    margin-bottom: 15px;
+}
+
+/* Ürün Fiyatı */
+.detail-price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #8c6239;
+    margin-bottom: 20px;
+}
+
+/* Ürün Açıklama Yazısı */
+.detail-desc {
+    font-size: 16px;
+    color: #615349;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Stok Durumu Alanı */
+.product-status {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.in-stock {
+    color: #2a9d8f;          /* Tatlı bir yeşil */
+    font-weight: bold;
+}
+
+/* Satın Alma Bölümü (Adet ve Buton yan yana) */
+.purchase-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Adet Seçim Kutusu */
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #4a3b32;
+}
+
+.quantity-box input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #e2d7cd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Sepete Ekle Butonu */
+.add-to-cart-btn {
+    background-color: #8c6239;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(140, 98, 57, 0.2);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #6f4e2d;
+}

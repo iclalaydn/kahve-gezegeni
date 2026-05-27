@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve Gezegeni | Evrenin En İyi Çekirdekleri...</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">☕ Kahve Gezegeni</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="pages/urunler.html">Ürünlerimiz</a></li>
+                <li><a href="pages/cekirdek-detay.html">Ürün Detayı</a></li>
+                <li><a href="pages/sepet.html">Sepetim</a></li>
+                <li><a href="pages/iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Kahve Gezegeni'nde Bir Keşif Yolculuğu</h1>
+            <p>Evrenin en özel köşelerinden toplanmış, özenle kavrulmuş nitelikli çekirdeklerle tanışın.</p>
+            <a href="pages/urunler.html" class="hero-btn">Çekirdekleri Keşfet</a>
+        </div>
+    </header>
+
+    <section class="products-section">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 2rem;">✨ Öne Çıkan Ürünlerimiz</h2>
+        <div class="products-container">
+            
+            <div class="product-card" data-ad="Etiyopya Yirgacheffe Kahvesi" data-fiyat="220" data-resim="img/cekirdek.png">
+                <div class="product-image-box">
+                    <img src="img/cekirdek.png" alt="Etiyopya Yirgacheffe" class="product-img">
+                </div>
+                <h3>Etiyopya Yirgacheffe Kahvesi</h3>
+                <p class="product-desc">Çiçeksi ve narenciye notalarıyla, aradığınız o hafif ve asidik nitelikli kahve deneyimi.</p>
+                <p class="product-price">220,00 TL</p>
+                <div class="product-actions" style="display: flex; gap: 10px; margin-top: 15px;">
+                    <a href="pages/cekirdek-detay.html" class="view-detail-btn" style="flex: 1; text-align: center; text-decoration: none; padding: 10px; background: #f5efe6; color: #4a3b32; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">Detay</a>
+                    <button class="add-to-cart-btn" style="flex: 1; background: #c05c36; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.9rem;">Ekle 🛒</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-ad="El Yapımı Seramik Kupa" data-fiyat="180" data-resim="img/kupa.jpg">
+                <div class="product-image-box">
+                    <img src="img/kupa.jpg" alt="Tasarım Seramik Kupa" class="product-img">
+                </div>
+                <h3>El Yapımı Seramik Kupa</h3>
+                <p class="product-desc">Kahve keyfinizi ikiye katlayacak, tamamen el işçiliğiyle üretilmiş özel tasarım kupa.</p>
+                <p class="product-price">180,00 TL</p>
+                <div class="product-actions" style="display: flex; gap: 10px; margin-top: 15px;">
+                    <a href="pages/kupa-detay.html" class="view-detail-btn" style="flex: 1; text-align: center; text-decoration: none; padding: 10px; background: #f5efe6; color: #4a3b32; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">Detay</a>
+                    <button class="add-to-cart-btn" style="flex: 1; background: #c05c36; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.9rem;">Ekle 🛒</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-ad="Klasik Cam French Press" data-fiyat="250" data-resim="img/frenchpress.jpg">
+                <div class="product-image-box">
+                    <img src="img/frenchpress.jpg" alt="Klasik Cam French Press" class="product-img">
+                </div>
+                <h3>Klasik Cam French Press</h3>
+                <p class="product-desc">Bitki çaylarınız ve pratik filtre kahve demlemeleriniz için paslanmaz çelik süzgeçli cam gövde.</p>
+                <p class="product-price">250,00 TL</p>
+                <div class="product-actions" style="display: flex; gap: 10px; margin-top: 15px;">
+                    <a href="pages/frenchpress-detay.html" class="view-detail-btn" style="flex: 1; text-align: center; text-decoration: none; padding: 10px; background: #f5efe6; color: #4a3b32; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">Detay</a>
+                    <button class="add-to-cart-btn" style="flex: 1; background: #c05c36; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.9rem;">Ekle 🛒</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <div class="quiz-container">
+            <h2>✨ Evrenin Sana Mesajı Var: Hangi Kahvesin?</h2>
+            <p class="quiz-subtitle">Moduna ve zevkine en uygun kahve gezegenini keşfetmek için testi çöz!</p>
+            
+            <div id="quiz-box">
+                <p id="quiz-question" class="question-text">Nasıl bir sabaha uyanmak istersin?</p>
+                <div id="quiz-options" class="quiz-options">
+                    </div>
+            </div>
+
+            <div id="result-box" class="hidden">
+                <h3 id="result-title">Sizin Kahveniz: ...</h3>
+                <p id="result-desc">Buraya kahve açıklaması gelecek.</p>
+                <button id="restart-btn" class="restart-btn">Testi Yeniden Çöz ☕</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kahve Gezegeni. Tüm Hakları Saklıdır.</p>
+            <p class="footer-credit">Evrenin en iyi çekirdekleri ile sevgiyle demlendi. ☕</p>
+        </div>
+    </footer>
+
+    <script src="scripts/myscript.js"></script>
+</body>
+</html>

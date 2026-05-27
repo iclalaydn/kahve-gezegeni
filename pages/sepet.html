@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Kahve Gezegeni</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">☕ Kahve Gezegeni</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünlerimiz</a></li>
+                <li><a href="cekirdek-detay.html">Ürün Detayı</a></li>
+                <li><a href="sepet.html" class="active">Sepetim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="cart-section" style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
+        <h1 style="margin-bottom: 30px; font-size: 2rem; color: #4a3b32;">🛒 Alışveriş Sepetim</h1>
+        
+        <div class="cart-wrapper" style="display: flex; flex-wrap: wrap; gap: 30px;">
+            
+            <div id="cart-items-container" style="flex: 2; min-width: 300px;"></div>
+
+            <div class="cart-summary" style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); height: fit-content;">
+                <h3 style="font-size: 1.3rem; color: #4a3b32; margin-bottom: 20px; border-bottom: 2px solid #f5efe6; padding-bottom: 10px;">Sipariş Özeti</h3>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #555;">
+                    <span>Ara Toplam:</span>
+                    <span id="subtotal-price">0,00 TL</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #555;">
+                    <span>Kargo Ücreti:</span>
+                    <span style="color: #2ecc71; font-weight: bold;">Bedava</span>
+                </div>
+                <hr style="border: none; border-top: 1px solid #f5efe6; margin: 20px 0;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 1.2rem; font-weight: bold; color: #4a3b32;">
+                    <span>Toplam Tutar:</span>
+                    <span id="total-price" style="color: #c05c36;">0,00 TL</span>
+                </div>
+
+                <button id="checkout-btn" style="width: 100%; background: #c05c36; color: #fff; border: none; padding: 15px; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer;">
+                    Alışverişi Tamamla 💳
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kahve Gezegeni. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
